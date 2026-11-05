@@ -1,0 +1,171 @@
+{
+ "checked_at": "2026-10-26T15:04:52",
+ "budget": {
+  "per_round": 3,
+  "limit": 3
+ },
+ "runs": [
+  {
+   "mode": "Europe_PMC2",
+   "entity": "KT-621",
+   "ok": true,
+   "error": null,
+   "rounds": 4,
+   "candidate_unique_count": 9,
+   "returned_results": 3,
+   "metrics": {
+    "returned_count": 3,
+    "full_text_count": 2,
+    "abstract_only_count": 0,
+    "with_doi_count": 3,
+    "with_url_count": 3,
+    "avg_match_ratio": 0.167,
+    "avg_content_match_ratio": 0.583,
+    "keyword_coverage": 0.5,
+    "keyword_hit_counts": {
+     "clinical trial": 1,
+     "randomized OR placebo-controlled OR open-label": 0,
+     "efficacy OR response rate OR overall survival OR progression-free survival": 0,
+     "safety OR adverse events OR tolerability": 1
+    },
+    "gold_hit_count": null
+   },
+   "path": "advance/drug/Europe_PMC2/tests/live/KT-621_Clinical Studies.json"
+  },
+  {
+   "mode": "Europe_PMC3",
+   "entity": "KT-621",
+   "ok": true,
+   "error": null,
+   "rounds": 4,
+   "candidate_unique_count": 3,
+   "returned_results": 3,
+   "metrics": {
+    "returned_count": 3,
+    "full_text_count": 1,
+    "abstract_only_count": 1,
+    "with_doi_count": 3,
+    "with_url_count": 3,
+    "avg_match_ratio": 0.083,
+    "avg_content_match_ratio": 0.417,
+    "keyword_coverage": 0.25,
+    "keyword_hit_counts": {
+     "clinical trial": 0,
+     "randomized OR placebo-controlled OR open-label": 0,
+     "efficacy OR response rate OR overall survival OR progression-free survival": 1,
+     "safety OR adverse events OR tolerability": 0
+    },
+    "gold_hit_count": null
+   },
+   "path": "advance/drug/Europe_PMC3/tests/live/KT-621_Clinical Studies.json"
+  },
+  {
+   "mode": "Europe_PMC4",
+   "entity": "KT-621",
+   "ok": true,
+   "error": null,
+   "rounds": 16,
+   "candidate_unique_count": 17,
+   "returned_results": 3,
+   "metrics": {
+    "returned_count": 3,
+    "full_text_count": 1,
+    "abstract_only_count": 1,
+    "with_doi_count": 3,
+    "with_url_count": 3,
+    "avg_match_ratio": 0.25,
+    "avg_content_match_ratio": 0.417,
+    "keyword_coverage": 0.75,
+    "keyword_hit_counts": {
+     "clinical trial": 1,
+     "randomized OR placebo-controlled OR open-label": 0,
+     "efficacy OR response rate OR overall survival OR progression-free survival": 1,
+     "safety OR adverse events OR tolerability": 1
+    },
+    "gold_hit_count": null
+   },
+   "path": "advance/drug/Europe_PMC4/tests/live/KT-621_Clinical Studies.json"
+  },
+  {
+   "mode": "PMC2",
+   "entity": "KT-621",
+   "ok": true,
+   "error": null,
+   "rounds": 4,
+   "candidate_unique_count": 7,
+   "returned_results": 3,
+   "metrics": {
+    "returned_count": 3,
+    "full_text_count": 2,
+    "abstract_only_count": 1,
+    "with_doi_count": 3,
+    "with_url_count": 3,
+    "avg_match_ratio": 0.417,
+    "avg_content_match_ratio": 0.917,
+    "keyword_coverage": 1.0,
+    "keyword_hit_counts": {
+     "clinical trial OR phase 1 OR phase 2 OR phase 3": 1,
+     "randomized OR placebo-controlled OR open-label": 1,
+     "efficacy OR response rate OR overall survival OR progression-free survival": 1,
+     "safety OR adverse events OR tolerability": 2
+    },
+    "gold_hit_count": null
+   },
+   "path": "advance/drug/PMC2/tests/live/KT-621_Clinical Studies.json"
+  },
+  {
+   "mode": "PMC3",
+   "entity": "KT-621",
+   "ok": true,
+   "error": null,
+   "rounds": 4,
+   "candidate_unique_count": 6,
+   "returned_results": 3,
+   "metrics": {
+    "returned_count": 3,
+    "full_text_count": 2,
+    "abstract_only_count": 0,
+    "with_doi_count": 3,
+    "with_url_count": 3,
+    "avg_match_ratio": 0.167,
+    "avg_content_match_ratio": 0.667,
+    "keyword_coverage": 0.5,
+    "keyword_hit_counts": {
+     "clinical trial OR phase 1 OR phase 2 OR phase 3": 1,
+     "randomized OR placebo-controlled OR open-label": 0,
+     "efficacy OR response rate OR overall survival OR progression-free survival": 0,
+     "safety OR adverse events OR tolerability": 1
+    },
+    "gold_hit_count": null
+   },
+   "path": "advance/drug/PMC3/tests/live/KT-621_Clinical Studies.json"
+  },
+  {
+   "mode": "PMC4",
+   "entity": "KT-621",
+   "ok": true,
+   "error": null,
+   "rounds": 16,
+   "candidate_unique_count": 20,
+   "returned_results": 3,
+   "metrics": {
+    "returned_count": 3,
+    "full_text_count": 3,
+    "abstract_only_count": 0,
+    "with_doi_count": 3,
+    "with_url_count": 3,
+    "avg_match_ratio": 0.167,
+    "avg_content_match_ratio": 0.75,
+    "keyword_coverage": 0.5,
+    "keyword_hit_counts": {
+     "clinical trial OR phase 1 OR phase 2 OR phase 3": 1,
+     "randomized OR placebo-controlled OR open-label": 0,
+     "efficacy OR response rate OR overall survival OR progression-free survival": 0,
+     "safety OR adverse events OR tolerability": 1
+    },
+    "gold_hit_count": null
+   },
+   "path": "advance/drug/PMC4/tests/live/KT-621_Clinical Studies.json"
+  }
+ ]
+}
