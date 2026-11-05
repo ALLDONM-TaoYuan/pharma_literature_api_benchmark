@@ -69,12 +69,13 @@ src/                         Every script lives here
       ├─ literature_variants/  Drug board's query-strategy comparison engine (original name / manual alias / original+info / alias+info)
       └─ <variant>/run_*.py   Collector for running a single interface variant
 
-disease/ drug/ target/      Data directories of the three boards (not committed)
-├─ ES/ PMC/ Europe_PMC/ …  Per-interface results (output/)
-├─ ALL_result/              Aggregated results of all interfaces + the run log run_log.json
-└─ *.xlsx                   The object workbook for this round
+disease/ drug/ target/      Data directories of the three boards
+├─ ES/ PMC/ Europe_PMC/ …  Per-interface results (output/) — not committed
+├─ ALL_result/              Aggregated results + the run log run_log.json — not committed
+└─ *.xlsx                   The object workbook for this round — committed
 
-advance/                    Data directory of the advance area (per-variant output/ and input workbooks)
+advance/                    Data directory of the advance area (per-variant output/ — not committed,
+                            input workbooks — committed)
 ```
 
 **Code and data are separate**: every `.py` lives under `src/`, while result data and input workbooks stay in the board directories. Every path between the two is obtained through `src/paths.py`; no script hard-codes an absolute path, so running from any working directory points at the same place.
@@ -253,6 +254,6 @@ python main.py --mode normal --board drug --sources Europe_PMC
 - **The controllers print nothing to the console.** All logging lands in `run_log.json`, so a batch run can be judged by reading results instead of watching a screen.
 - **To change how a query is written**, edit the keyword groups in `src/boards/<board>/config/__init__.py` and the query construction in `config/*_query.py`; the controller does not need to change.
 - **Do not hard-code paths.** When adding or moving a directory, go through the functions in `src/paths.py` instead of stitching together `Path(__file__).parent.parent`.
-- **The repository holds no collected results.** The returned literature runs to several GB, and `.gitignore` already excludes `output/` and `ALL_result/`; regenerate results with the commands above when needed.
-- **Input workbooks (`*.xlsx`) are in `.gitignore` too**, because they contain drug names, competitors and internal therapeutic areas. Keep each workbook at the root of the matching board's data directory, with the file name matching `config/settings.py`.
+- **Collected results (`output/`, `ALL_result/`, `_digest/`) are never committed.** They run to over a gigabyte and regenerate from the workbooks; regenerate them with the commands above.
+- **Input workbooks (`*.xlsx`) are committed on purpose.** They carry the object lists the collectors read, so a fresh clone can run without extra files. Keep each workbook at the root of the matching board's data directory, with the file name matching `config/settings.py`.
 - The three board implementations are independent and overlap in code, so **change only the three copies under `src/boards/`**. `src/advance/` is the comparison area copied out during the earlier interface study; use it to check query formulations, and do not change both sides at once.
